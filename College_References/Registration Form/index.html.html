@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Is Registration form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mt-3 mb-4">Student Registration Form</h1>
+        <form>
+            <div class="row">
+                <div class="col-12 form">
+                    <h4 class="text-center text-white pt-3">Personal Details</h4>
+                    <hr style="background-color: #fff;">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Name <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="name" class="form-control"
+                                            placeholder="Enter Your Name" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Father's Name <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="fname" class="form-control"
+                                            placeholder="Enter Your Father's Name" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Mother's Name <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="mname" class="form-control"
+                                            placeholder="Enter Your Mother's Name" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Mobile Number <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="mobile" class="form-control"
+                                            placeholder="Enter Your Mobile" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Email Id </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="email" name="mail" class="form-control"
+                                            placeholder="Enter Your Email Mail"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Date Of Birth <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="date" name="dob" class="form-control" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Aadhar Number <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="adhar" class="form-control"
+                                            placeholder="1111 2222 3333" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Blood Group </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="bgroup" class="form-control"
+                                            placeholder="Eg: A, A+, A-, B,B+,B- Etc."></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Gender <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="gender" class="form-control" required>
+                                            <option disabled selected value="">--Select Your Gender--</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Religion <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="rel" required class="form-control">
+                                            <option disabled selected value="">--Select Your Religion</option>
+                                            <option value="hindu">Hindu</option>
+                                            <option value="islam">Islam</option>
+                                            <option value="sikh">Sikh</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Category <span style="color: #fff;">*</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <select name="cate" class="form-control" required>
+                                            <option disabled selected value="">--Select Your Category--</option>
+                                            <option value="SC/ST">SC / ST</option>
+                                            <option value="OBC/EBC">OBC / EBC</option>
+                                            <option value="general">General</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Image <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="file" name="image" class="form-control" required>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 form">
+                    <h4 class="text-center text-white pt-3">Address</h4>
+                    <hr style="background-color: #fff;">
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Village <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="vill" class="form-control"
+                                            placeholder="Enter Your Village" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Post Office <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="post" class="form-control"
+                                            placeholder="Enter Your Post Office" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Police Station <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="police" class="form-control"
+                                            placeholder="Enter Your Police Station" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>District <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="dist" class="form-control"
+                                            placeholder="Enter Your District" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>State <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="state" class="form-control"
+                                            placeholder="Enter Your State" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <table class="table table-responsive">
+                                <tr>
+                                    <td>Pin Code <span style="color: #fff;">*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="pin" class="form-control"
+                                            placeholder="Enter Your Pin Code" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 form">
+                    <h4 class="text-center text-white pt-3">Educationl Qualification</h4>
+                    <hr style="background-color: #fff;">
+
+                    <div class="row educational">
+                        <div class="col-12">
+                            <table class="table table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Degree</th>
+                                        <th>Board / University</th>
+                                        <th>Passing Year</th>
+                                        <th>Division</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" name="degree" class="form-control"
+                                                placeholder="Enter Degree1"></td>
+                                        <td><input type="text" name="board" class="form-control"
+                                                placeholder="Board / University 1 "></td>
+                                        <td><input type="text" name="pyear" class="form-control"
+                                                placeholder="Enter Passing Year 1"></td>
+                                        <td><input type="text" name="div" class="form-control"
+                                                placeholder="Enter Division 1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="degree" class="form-control"
+                                                placeholder="Enter Degree 2"></td>
+                                        <td><input type="text" name="board" class="form-control"
+                                                placeholder="Board / University 2"></td>
+                                        <td><input type="text" name="pyear" class="form-control"
+                                                placeholder="Enter Passing Year 2"></td>
+                                        <td><input type="text" name="div" class="form-control"
+                                                placeholder="Enter Division 2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="degree" class="form-control"
+                                                placeholder="Enter Degree 3"></td>
+                                        <td><input type="text" name="board" class="form-control"
+                                                placeholder="Board / University 3"></td>
+                                        <td><input type="text" name="pyear" class="form-control"
+                                                placeholder="Enter Passing Year 3"></td>
+                                        <td><input type="text" name="div" class="form-control"
+                                                placeholder="Enter Division 3"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-2 mb-5">
+                <div class="col-12 m-0 p-0">
+                    <div class="btn m-0 p-0">
+                        <table>
+                            <tr>
+                                <td><input type="submit" name="ok" value="Submit" class="btn btn-outline-success">
+                                    <input type="reset" value="Reset" class="btn btn-outline-danger mr-2">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

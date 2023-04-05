@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo/iconbg.png" type="image/x-icon">
+    <!-- icon here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <title>Rooms</title>
+</head>
+
+<div class="bg-white sticky top-0 z-50 ">
+    <!-- sticky bar set -->
+    <header class="text-gray-600 body-font w-full h-24  px-8 ">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="index.html">
+                <img src="logo/logorbg.png" alt="" style="height:65px;">
+            </a>
+
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center font-medium">
+
+                <ul class="hidden space-x-2 md:inline-flex">
+                    <li><a href="index.html"
+                            class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">Home</a>
+                    </li>
+                    <li><a href="host2.html"
+                            class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">Rooms</a>
+                    </li>
+                    <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">Updates</a>
+                    </li>
+                    <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 rounded hover:text-black">About Us
+                        </a></li>
+                    <button>
+
+                        <li><a style="display: block; margin-top: -5px;" href="#"
+                                class="inline-flex animate-pulse hover:animate-none items-center bg-red-200 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 hover:text-black rounded text-base font-medium mt-4 md:mt-0">Register
+                            </a></li>
+                    </button>
+
+                </ul>
+                <div class=" inline-flex md:hidden " x-data="{ open: false }">
+                    <button class=" ml-[270px] -mt-[100px] flex-none px-2 " @click="open = true">
+                        <!-- burger position change -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                        </svg>
+                        <span class="sr-only" style=" float: left;">Open Menu</span>
+                    </button>
+                    <div class=" absolute top-0 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-white
+                            rounded shadow" x-show.transition="open" @click.away="open = false" x-cloak>
+                        <button class="self-end flex-none px-2 ml-2" @click="open = false">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span class="sr-only">Close Menu</span>
+                        </button>
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="px-4 py-2 font-semibold text-gray-600 hover:text-black rounded">Home</a>
+                            </li>
+                            <li><a href="host2.html"
+                                    class="px-4 py-2 font-semibold text-gray-600 hover:text-black rounded">Rooms
+                                </a>
+                            </li>
+                            <li><a href="#"
+                                    class="px-4 py-2 font-semibold text-gray-600 hover:text-black rounded">Updates
+                                </a></li>
+                            <li><a href="#" class="px-4 py-2 font-semibold text-gray-600 hover:text-black rounded">About
+                                    Us</a>
+                            </li>
+                            <button>
+                                <li><a style="display: block; margin-top: -5px;" href="#"
+                                        class="inline-flex animate-pulse hover:animate-none items-center bg-red-200 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 hover:text-black rounded text-base font-medium mt-4 md:mt-0">Register
+                                    </a></li>
+                            </button>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+</div>
+<hr>
+
+<body>
+    <div class=" container flex justify-center ">
+        <div class="flex flex-col max-w-7xl justify-center items-center">
+            <div class="flex md:flex-row flex-col max-w-7xl justify-center items-center ">
+                <div
+                    class=" justify-left  bg-white m-2 shadow-lg flex flex-col md:flex-row w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                    <div class="h-26 w-full justify-left "> <img src="img/usr/bboy.webp" alt="" class=" justify-left"
+                            style="display: block;" />
+
+                    </div>
+                    <div class="grid p-2 bg-red-200 justify-left">
+                        <div class="font-bold text-lg text-black m-2  justify-left">Ashwin Mittal
+                        </div>
+                        <h1 class="justify-left">
+                            Elgin, Kolkata, West Bengal 700017
+                        </h1>
+
+                        <div class="font-bold text-lg text-black m-2 display:block justify-left"> Rent : ₹5000/month
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                    <div class="h-26 w-full overflow-hidden"> <img src="img/usr/bgirl.webp" alt="" class="" /> </div>
+                    <div class="grid p-2">
+                        <div class="font-bold text-lg text-black m-2 ">Love is like wildflowers; it is often found in
+                            the
+                            most unlikely places.
+                        </div>
+                        <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                appreciation for someone. They are also a great way to show your love. Flowers can be
+                                delivered in a variety of ways, including through mail, messenger, or even in person.
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex md:flex-row flex-col max-w-7xl justify-center items-center">
+                <div
+                    class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                    <div class="h-26 w-full overflow-hidden"> <img src="img/usr/bgirl.webp" alt="" class="" /> </div>
+                    <div class="grid p-2">
+                        <div class="font-bold text-lg text-black m-2 ">Love is like wildflowers; it is often found in
+                            the
+                            most unlikely places.
+                        </div>
+                        <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                appreciation for someone. They are also a great way to show your love. Flowers can be
+                                delivered in a variety of ways, including through mail, messenger, or even in person.
+                            </a></div>
+                    </div>
+                </div>
+                <div
+                    class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                    <div class="h-26 w-full overflow-hidden"> <img src="img/usr/bboy.webp " alt="" class="" /> </div>
+                    <div class="grid p-2">
+                        <div class="font-bold text-lg text-black m-2 ">Love is like wildflowers; it is often found in
+                            the
+                            most unlikely places.
+                        </div>
+                        <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                appreciation for someone. They are also a great way to show your love. Flowers can be
+                                delivered in a variety of ways, including through mail, messenger, or even in person.
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="flex md:flex-row flex-col max-w-7xl justify-center items-center">
+                <div
+                    class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                    <div class="h-26 w-full overflow-hidden"> <img
+                            src="https://source.unsplash.com/random/500x550/?boy " alt="" class="" /> </div>
+                    <div class="grid p-2">
+                        <div class="font-bold text-lg text-black m-2 ">Love is like wildflowers; it is often found in
+                            the
+                            most unlikely places.
+                        </div>
+                        <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                appreciation for someone. They are also a great way to show your love. Flowers can be
+                                delivered in a variety of ways, including through mail, messenger, or even in person.
+                            </a></div>
+                    </div>
+                </div>
+                <div
+                    class="overflow-hidden bg-white m-2 shadow-lg flex flex-col md:flex-row justify-center w-3/4 md:w-1/2 hover:scale-105 hover:brightness-90">
+                    <div class="h-26 w-full overflow-hidden"> <img
+                            src="https://source.unsplash.com/random/500x550/?car " alt="" class="" /> </div>
+                    <div class="grid p-2">
+                        <div class="font-bold text-lg text-black m-2 ">Love is like wildflowers; it is often found in
+                            the
+                            most unlikely places.
+                        </div>
+                        <div class="text-gray-500 m-2 text-sm"><a href="">Flowers are a beautiful way to show your
+                                appreciation for someone. They are also a great way to show your love. Flowers can be
+                                delivered in a variety of ways, including through mail, messenger, or even in person.
+                            </a></div>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

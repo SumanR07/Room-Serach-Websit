@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #03C988;
+}
+.bill{
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.bill h4{
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bill table tr td{
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bill table tr td select{
+    border-radius: 0px;
+    width: 230px;
+}
+.qua table tr td input[type="text"]{
+    border-radius: 0px;
+    width: 230px;
+}
+.rate table tr td input[type="text"]{
+    border-radius: 0px;
+    width: 130px;
+}
+.btn table tr td input[type="submit"]{
+    margin-top: 17px;
+}
+.print table thead tr th{
+    padding: 8px 65px;
+}
+.print table tbody tr td{
+    text-align: center;
+    padding: 8px 0px;
+    border-bottom: 0.1px solid #EEE;
+}

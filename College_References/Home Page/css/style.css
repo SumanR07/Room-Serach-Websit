@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.top-header {
+    height: 50px;
+    background-color: #DC0000;
+}
+
+.top-header .top-header-left {
+    height: 50px;
+    width: 33.3%;
+    float: left;
+}
+
+.top-header .top-header-left a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.top-header .top-header-mid {
+    height: 50px;
+    width: 33.3%;
+    float: left;
+}
+
+.top-header .top-header-mid a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.top-header .top-header-right {
+    height: 50px;
+    width: 33.3%;
+    float: left;
+}
+
+.top-header .top-header-right .social-media {
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.top-header .top-header-right .social-media a {
+    background-color: #fff;
+    color: #DC0000;
+    text-decoration: none;
+    padding: 5px 7px;
+}
+
+/* Title css start here */
+.title-area {
+    height: 150px;
+}
+
+.title-area .logo {
+    height: 150px;
+    width: 20%;
+    float: left;
+}
+
+.title-area .logo img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.title-area .ins-area {
+    height: 150px;
+    width: 80%;
+    float: left;
+}
+
+.title-area .ins-area h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: #850000;
+}
+
+.title-area .ins-area span {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -15px;
+}
+
+/* title css end here */
+.menu {
+    height: 50px;
+    width: 100%;
+    background-color: #850000;
+}
+
+.menu nav ul li {
+    display: inline-block;
+}
+
+.menu .submenu {
+    line-height: 47px;
+}
+
+.menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 25px;
+    letter-spacing: 0.3px;
+    padding: 3px 5px;
+
+}
+
+.menu nav ul li a:hover {
+    background-color: #fff;
+    color: #850000;
+    transition: all 2s;
+}

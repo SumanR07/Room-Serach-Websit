@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.form{
+    height: auto;
+    background-color: #39B5E0;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.form h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form table tr td{
+    border: none;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+.form table tr td input[type="text"], input[type="date"], input[type="email"], input[type="file"]{
+    width: 325px;
+    border-radius: 0px;
+}
+.form table tr td select{
+    width: 325px;
+    border-radius: 0px;
+}
+.educational table thead tr th{
+    color: #fff;
+    padding: 10px 78px;
+    border: 0.1px solid #fff;
+}
+.educational table tbody tr td{
+    border: 0.1px solid #fff;
+    padding: 10px;
+}
+.educational table tbody tr td input[type="text"]{
+    width: 250px!important;
+}
+.btn {
+    display: block;
+    float: right;
+}
+.btn input[type="submit"], input[type="reset"]{
+    padding: 8px 40px;
+}
